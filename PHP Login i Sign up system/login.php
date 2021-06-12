@@ -24,7 +24,16 @@ include_once 'header.php';
         <div class="row">
           <div class="large-12 large-centered columns">
             <input type="submit" name="submit" class="button expand" value="Log In"/>
-            
+            <?php 
+        if(isset($_GET["error"])){
+          if($_GET["error"] == "inputempty" ){
+            echo "<p>You didin't fill all fields!</p>";
+          }
+        else if ($_GET["error"] == "loginfailed" ){
+          echo "<p>Login failed. Try again.</p>";
+        }
+      }
+      ?>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
     <script>

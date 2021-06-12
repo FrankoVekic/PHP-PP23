@@ -75,3 +75,40 @@ function invalidUsername($username) {
         header("location: ../signup.php?error=none");
         exit();
     }    
+    
+    function loginEmpty($username,$password) {
+        $result;
+        if(empty($username) || empty($password)) {
+        $result = true;
+        }
+        
+        else {
+            $result = false;
+        }
+        return $result;
+        }
+
+    function loginUser($connection, $username,$password) {
+        
+        $usedUidOrEml = usedUidOrEml($connection,$username,$username);
+
+        if($usedUidOrEml === false ){
+            header("location: ../login.php?error=loginfailed");
+            exit();
+        }
+        $passwordHased = $usedUidOrEml["password"]; 
+        $checkPassword = password_verify($password, $passwordHased);
+
+        if($checkPassword === false){
+            header("location: ../login.php?error=loginfailed");
+            exit();
+        }
+        else if ($checkPassword === true){
+            session_start();
+            $_SESSION["sifra"] = $usedUidOrEml["sifra"];
+            $_SESSION["username"] = $usedUidOrEml["userName"];
+            header("location: ../index.php");
+            exit();
+
+        }
+    }

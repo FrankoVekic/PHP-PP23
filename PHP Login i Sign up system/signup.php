@@ -39,6 +39,22 @@ include_once 'header.php';
           <div class="large-12 large-centered columns">
             <input type="submit" name="submit" class="button expand" value="Sign up"/>
             
+            <?php 
+        if(isset($_GET["error"])){
+          if($_GET["error"] == "inputempty" ){
+            echo "<p>You didin't fill all fields!</p>";
+          }
+        else if ($_GET["error"] == "invalidusername" ){
+          echo "<p>Select another username!</p>";
+        }
+        else if ($_GET["error"] == "passwordsnotmatching" ){
+          echo "<p>Your password does not match!</p>";
+        }
+        else if ($_GET["error"] == "none" ){
+          echo "<p>You have signed up!</p>";
+        }
+      }
+      ?>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
     <script>
