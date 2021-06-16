@@ -27,6 +27,14 @@
       <li><a href="zadatak3.php" target="_blank">Zadatak 3</a></li>
       <li><a href="zadatak4.php" target="_blank">Zadatak 4</a></li>
       <li><a href="zadatak5.php" target="_blank">Zadatak 5</a></li>
+      <li><a href="zadatak7.php?t=3&k=6" target="_blank">Zadatak 7</a></li>
     </ul>
   </li>
-</ul>
+  <li>
+    <a href="#">Nizovi</a>
+    <ul class="vertical menu">
+      <li><a href="indeksninizovi.php">Indeksni nizovi</a></li>
+      <li><a href="asocijativninizovi.php?t=1&k=2">Asocijativni nizovi</a></li>
+      <li><a href="kalkulator.php">Kalkulator</a></li>
+    </ul>
+  </li>

@@ -61,3 +61,24 @@ $a = 25; $b = 10; $c= 11; $d=5; $e= 8;
 $c= $a++ / $d++ + 5 - --$b - $e++; //$c= 5 + 5 - 9 - 8= 1-8 = -7, $c= -7, $a=26, $b=9, $d=6, $e=9
 $a = --$b + $c++ + ++$e - $d--; // 8+(-7)+10-6 = $a=5, $b=8, $c=-6, $d=5, $e=10
 $e = $d++ - --$a + $b++ + --$c; // 5-4+8+(-7)= $e=2, $a=4, $b=9, $c=-7, $d=6
+
+
+//modulo
+//ostatak nakon cjelobrojnog djeljenja
+
+$t =5;
+
+$ostatakNakonCjelobrojnogDjeljenja = 5%2; //1
+
+//5 / 2 cjelobrojno = 2
+//2 * 2 = 4 
+// 5-4 = 1 --- to je modulo (broj jedan)
+
+$broj = isset($_GET['broj']) ? $_GET['broj'] : 2;
+echo 'primljeni broj ', $broj, ' je ';
+if($broj % 2 === 0) {
+    echo ' paran';
+}
+else{
+    echo ' ne paran';
+}
