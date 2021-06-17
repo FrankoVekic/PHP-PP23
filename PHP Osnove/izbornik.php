@@ -36,5 +36,6 @@
       <li><a href="indeksninizovi.php">Indeksni nizovi</a></li>
       <li><a href="asocijativninizovi.php?t=1&k=2">Asocijativni nizovi</a></li>
       <li><a href="kalkulator.php">Kalkulator</a></li>
+      <li><a href="vjezba.php">Vježba</a></li>
     </ul>
   </li>
