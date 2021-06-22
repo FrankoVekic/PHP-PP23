@@ -51,6 +51,7 @@ for($i=1;$i<=$redova;$i++){
     echo '</tr>';
 }
 echo '</table>';    
+// mat tab
 
 $redovi=[];
 for($i=0;$i<$redova;$i++){
@@ -125,16 +126,3 @@ for($i=0;$i<10;$i++){
     }
     echo $i, '<br />';
 }
-
-
-// beskonačne petlje
-//ovo nije beskonana petlja
-for($i=1;$i>0;$i++){
-
-}
-
-// sintaksa beskonačne for petlje
-for(;;){
-    
-}
-
