@@ -204,3 +204,65 @@ echo'<br>';
 
      }
  }
+ echo '<hr>';
+
+ echo 'Write a program that prompts the user to input an 
+ integer and then outputs the number with the digits reversed. 
+ For example, if the input is 12345, the output should be 54321.';
+ echo'<br>';
+ ?>
+ 
+ <form action="" method="get">
+           <label for="broj2">Željeni broj</label>
+           <input type="number" name="broj2" id="broj2">
+           <input type="submit" value="submit">
+ </form>
+ 
+ <?php 
+ 
+ if(isset($_GET['broj2'])){
+     $broj=$_GET['broj2'];
+     $obrnuto = 0;
+     $ostatak=0;
+ 
+     while($broj >=1){
+ 
+         $ostatak = $broj % 10;
+         $obrnuto = $obrnuto * 10 + $ostatak;
+         $broj = $broj / 10;
+     }
+     echo $obrnuto;
+ }
+ 
+ echo '<hr>';
+ 
+ echo 'Write a program that reads a set of integers, and then prints the sum of the even and odd integers.';
+ 
+ ?>
+ 
+ <form action="" method="get">
+           <label for="broj3">Željeni broj</label>
+           <input type="number" name="broj3" id="broj3">
+           <input type="submit" value="submit">
+ </form>
+ 
+ <?php 
+     if(isset($_GET['broj3'])){
+ 
+     
+     $do=$_GET['broj3'];
+     $rez=['parni'=>0,'neparni'=>0];
+ 
+     for($i=1;$i<=$do;$i++){
+         if($i%2===0){
+             $rez['parni'] = $rez['parni'] + $i;
+         }
+         else{
+             $rez['neparni'] = $rez['neparni'] + $i;
+         }
+         
+     }
+     print_r($rez);
+ 
+ }
+ 
