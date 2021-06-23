@@ -32,6 +32,10 @@
       <li><a href="zadatak9.php" target="_blank">Zadatak 9</a></li>
       <li><a href="zadatak10.php" target="_blank">Zadatak 10</a></li>
       <li><a href="zadatak11.php" target="_blank">Zadatak 11</a></li>
+      <li><a href="zadatak12.php" target="_blank">Zadatak 12</a></li>
+      <li><a href="zadatak13.php" target="_blank">Zadatak 13</a></li>
+      <li><a href="zadatak14.php" target="_blank">Zadatak 14</a></li>
+      <li><a href="zadatak15.php" target="_blank">Zadatak 15</a></li>
     </ul>
   </li>
   <li>
@@ -50,5 +54,12 @@
       <li><a href="forpetlja.php">For petlja</a></li>
       <li><a href="whilepetlja.php">While petlja</a></li>
       <li><a href="dowhilepetlja.php">Do-while petlja</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">Funkcije</a>
+    <ul class="vertical menu">
+      <li><a href="cestokoristenefunkcije.php">Cesto koristene funkcije</a></li>
+      <li><a href="vlastitefunkcije.php">Vlastite funkcije</a></li>
     </ul>
   </li>
