@@ -220,19 +220,26 @@ echo'<br>';
  
  <?php 
  
- if(isset($_GET['broj2'])){
-     $broj=$_GET['broj2'];
-     $obrnuto = 0;
-     $ostatak=0;
- 
-     while($broj >=1){
- 
-         $ostatak = $broj % 10;
-         $obrnuto = $obrnuto * 10 + $ostatak;
-         $broj = $broj / 10;
-     }
-     echo $obrnuto;
- }
+ function reverseNum($num)
+{
+    $num;
+    $ostatak=0;
+    $reverse=0;
+    
+    while($num>=1){
+        $ostatak = $num % 10;
+        $reverse = $reverse * 10 + $ostatak;
+        $num = $num / 10;
+    }
+    return $reverse;
+}
+
+if(isset($_GET['broj2'])){
+    $broj=$_GET['broj2'];
+   
+    echo reverseNum($broj);
+    
+}
  
  echo '<hr>';
  
@@ -265,4 +272,75 @@ echo'<br>';
      print_r($rez);
  
  }
+ echo '<hr>';
+ echo 'Write a program that prompts the user to input a positive integer.
+  It should then output a message indicating whether the number is a prime number.';
  
+ ?>
+ <form action="" method="get">
+           <label for="broj4">Željeni broj</label>
+           <input type="number" name="broj4" id="broj4">
+           <input type="submit" value="submit">
+ </form>
+ 
+ <?php 
+ 
+ function primeNumber($num)
+ {
+     for($i=2;$i<$num;$i++){
+         if($num % $i === 0){
+             return false;
+         }
+         else{
+             return true;
+         }
+ 
+     }
+ }
+ 
+ if(isset($_GET['broj4'])){
+     $broj= $_GET['broj4'];
+    
+     if(primeNumber($broj)){
+         echo $broj, ' is a prime number.';
+     }
+     else {
+         echo $broj, ' is not a prime number';
+     }
+ }
+ 
+ echo '<hr>';
+ echo 'Write a program to calculate HCF of Two given number.';
+ 
+ ?>
+ <form action="" method="get">
+           <label for="broj5">Prvi broj</label>
+           <input type="number" name="broj5" id="broj5">
+           <label for="broj6">Drugi broj</label>
+           <input type="number" name="broj6" id="broj6">
+           <input type="submit" value="submit">
+ </form>
+ 
+ <?php 
+ 
+ function calcHcf($a,$b){
+     $hfc=0;
+ 
+     for($i=1;$i<=$a || $i<=$b;$i++){
+         if($a%$i==0 && $b%$i==0){
+             $hcf=$i;
+         }
+     }
+     return $hcf;
+ }
+ 
+ if(isset($_GET['broj5']) && isset($_GET['broj6'])){
+     $broj1= $_GET['broj5'];
+     $broj2= $_GET['broj6'];
+ 
+     echo calcHcf($broj1,$broj2);
+ 
+ }
+ 
+ echo '<hr>';
+ echo ''; 
