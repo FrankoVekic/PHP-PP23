@@ -343,4 +343,39 @@ if(isset($_GET['broj2'])){
  }
  
  echo '<hr>';
- echo ''; 
+ echo'Write a program to print out all Armstrong numbers between 1 and 500. 
+If sum of cubes of each digit of the number is equal to the number itself, 
+then the number is called an Armstrong number.
+For example, 153 = ( 1 * 1 * 1 ) + ( 5 * 5 * 5 ) + ( 3 * 3 * 3 )';
+
+    for($broj=1;$broj<=500;$broj++){
+
+        $check = $broj;
+        $a=$check % 10;
+        $check = $check / 10;
+        $b=$check % 10;
+        $check = $check / 10;
+        $c=$check % 10;
+
+        if($a*$a*$a + $b*$b*$b + $c*$c*$c==$broj){
+            echo '<br>';
+            echo $broj . '<br>';
+        }
+    }
+
+    echo '<hr>';
+
+    echo 'Write a program to calculate the sum of 
+    following series where n is input by user. 
+    1 + 1/2 + 1/3 + 1/4 + 1/5 +…………1/n ';
+
+    function numOfNs($n) 
+    {
+        $sum=0;
+        for($i=1;$i<=$n;$i++){
+            $sum+=1.0/$i;
+        }
+        return $sum;
+    }
+echo '<br>';
+echo numOfNs(10);
