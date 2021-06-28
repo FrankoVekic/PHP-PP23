@@ -33,11 +33,11 @@ popunjeni sljedećom logikom:</p>
 <form action="" method="post" class="form" >
   <div>
     <label for="red" class="brojredaka">Broj redaka</label>
-      <input type="text" name="red" class="red">
+      <input type="text" name="red" class="red" value="<?php echo $_POST['red'];?>">
   </div>  
   <div>
   <label for="stupac" class="brojstupaca">Broj stupaca</label>
-  <input type="text" name="stupac" class="stupac">
+  <input type="text" name="stupac" class="stupac" value="<?php echo $_POST['stupac'];?>">
   </div>
     <div>
     <input type="submit" name="submit" class="button expand" value="KREIRAJ TABLICU"/>
