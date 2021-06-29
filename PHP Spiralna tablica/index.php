@@ -10,11 +10,11 @@ error_reporting(1);
     <title>Ciklička tablica - PHP</title>
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stil.css">
 </head>
 <body>
     <div class="naslov">
-      <h2>CIKLIČKA TABLICA</h2>
+      <h2>SPIRALNA TABLICA</h2>
     <div class="objasnjenje1">
 <p> Korisnik unosi dva polja: broj redova i broj <br>stupaca. 
   Ispod postoji gumb "KREIRAJ<br> TABLICU". Nakon submita, pored navedene <br>
@@ -46,7 +46,22 @@ popunjeni sljedećom logikom:</p>
   </div>
 <div class="output"> OUTPUT </div>                 
 <?php 
-    include 'matrix.php';
+    include 'funkcije.php';
+    if(inputCheck()==1){
+      echo "<p class='funkcija'> Unesite željene podatke..</p>";
+    }
+    else if(correctInput()==1){
+      echo "<p class='funkcija'> Uneseni podaci moraju biti brojevi!</p>";
+    }
+    else if(aboveZero()==1){
+      echo "<p class='funkcija'> Podaci moraju biti veći od nula!</p>";
+
+    }
+    else {
+      echo "<p class='funkcija'> Unesite nove podatke..</p>";
+      include 'matrix.php';
+    }
+    
 ?>
 </div>  
     

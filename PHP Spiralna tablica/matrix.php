@@ -11,6 +11,8 @@ if(isset($_POST['submit'])){
     $minStup = 0;
     $maxStup = $stupac -1;
     $tablica=[];
+
+    
     
     while ($broj <= $red*$stupac){
         for($n=$maxStup; $n >= $minStup; $n--){
