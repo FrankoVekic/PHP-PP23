@@ -63,3 +63,10 @@
       <li><a href="vlastitefunkcije.php">Vlastite funkcije</a></li>
     </ul>
   </li>
+  <li>
+    <a href="#">Ugrađeni nizovi (built in arrays)</a>
+    <ul class="vertical menu">
+      <li><a href="ugradeninizovi.php">Uvijek dostupni nizovi</a></li>
+      <li><a href="postprimjer.php">POST primjer</a></li>
+    </ul>
+  </li>

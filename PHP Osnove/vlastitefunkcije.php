@@ -109,8 +109,56 @@ log2($niz,'p');
 $godina=2021;
 
 function godina(){
-    echo $godina;
+   // echo $godina;
 }
 
 godina();
 
+echo '<hr>';
+
+function brojParniNeparni($od,$do)
+{
+    $rez=['parni'=>0,'neparni'=>0];
+    for($i=$od;$i<=$do;$i++){
+        if($i%2===0){
+            $rez['parni'] = $rez['parni'] + $i;
+        }
+        else{
+            $rez['neparni'] = $rez['neparni'] + $i;
+        } 
+    }
+    return $rez;
+}
+print_r(brojParniNeparni(1,7));
+echo '<hr>';
+
+//rekurzija 
+
+//Zadatak zbrajanja prvih 100 brojeva rekurzijom
+
+function sumToNum($n=1)
+{
+    echo $n, '<br>';
+
+    if($n<100){
+        return sumToNum($n+1);
+
+    }
+}
+
+sumToNum();
+
+echo '<hr>';
+
+function recursiveDec ($n=100)
+{
+    echo $n, '<br>';
+
+    if($n>0){
+        return recursiveDec($n-1);
+    }
+}
+
+recursiveDec();
+
+echo '<hr>';
