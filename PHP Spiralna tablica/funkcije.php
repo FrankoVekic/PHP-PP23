@@ -13,9 +13,7 @@ function inputCheck ()
 
 function correctInput()
 {   
-    if(isset($_POST['submit'])){
-
-    
+ if(isset($_POST['submit'])){
     if(preg_match("/^[a-zA-Z]*$/", $_POST['red']) || preg_match("/^[a-zA-Z]*$/", $_POST['stupac'])){
         return 1;
     }
@@ -31,21 +29,21 @@ function aboveZero()
         $stupac = $_POST['stupac'];
 
         if($stupac <=0 || $red <=0){
-            return 1;
+        return 1;
         }
     }
     else {
         return 2;
     }
-
 }
-
 function inputEmpty()
-{
+{   
+    if(isset($_POST['submit'])){
     if(empty($_POST['red']) || empty($_POST['stupac']))
-    return 1;
+        return 1;
     else {
         return 2;
     }
-
 }
+}
+

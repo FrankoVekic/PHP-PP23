@@ -50,12 +50,14 @@ popunjeni sljedećom logikom:</p>
     if(inputCheck()==1){
       echo "<p class='funkcija'> Unesite željene podatke..</p>";
     }
-    else if(correctInput()==1){
-      echo "<p class='funkcija'> Uneseni podaci moraju biti brojevi!</p>";
+    else if (inputEmpty()==1){
+      echo "<p class='funkcija'> Niste unjeli podatke!</p>";
     }
     else if(aboveZero()==1){
       echo "<p class='funkcija'> Podaci moraju biti veći od nula!</p>";
-
+    }
+    else if(correctInput()==1){
+      echo "<p class='funkcija'> Uneseni podaci moraju biti brojevi!</p>";
     }
     else {
       echo "<p class='funkcija'> Unesite nove podatke..</p>";
