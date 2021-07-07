@@ -1,0 +1,10 @@
+/* Mjesto gdje definiramo naše stilove
+
+NE MJENJATI foundation.css NIKADA
+*/
+
+
+.pocetna{
+    min-height: 500px;
+    background-color: bisque;
+}

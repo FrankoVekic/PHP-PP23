@@ -1,0 +1,36 @@
+*{
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+body{
+    background-image: url(includes/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.button {
+    background-color: pink;
+}
+
+h4{
+    font-size: 40px;
+    color: white;
+}
+
+.text1{
+text-align: center;
+font-size: 20px;
+color: white;
+margin-top: 35px;
+
+}
+
+
+.imena{
+    font-size: 50px;
+    color: white;
+    position: relative;
+    left: 450px;
+    top: -700px;
+    letter-spacing:8px;
+}
+
