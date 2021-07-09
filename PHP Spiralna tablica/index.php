@@ -10,7 +10,7 @@ error_reporting(1);
     <title>Ciklička tablica - PHP</title>
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="naslov">
@@ -31,6 +31,15 @@ popunjeni sljedećom logikom:</p>
 <div class="input"> INPUT </div>
 <div>
 <form action="" method="post" class="form" >
+<div>
+  <label for="pocetnapoz"><p class="pocetnapoz">Početna pozicija </p></label>
+          <select name="pocetnapoz">
+            <option value="dolje-desno">Dolje desno</option>
+            <option value="dolje-lijevo">Dolje lijevo</option>
+            <option value="gore-desno">Gore desno</option>
+            <option value="gore-lijevo">Gore lijevo</option>
+          </select>
+  </div>
   <div>
     <label for="red" class="brojredaka">Broj redaka</label>
       <input type="text" name="red" class="red" value="<?php echo $_POST['red'];?>">
@@ -50,12 +59,14 @@ popunjeni sljedećom logikom:</p>
     if(inputCheck()==1){
       echo "<p class='funkcija'> Unesite željene podatke..</p>";
     }
-    else if(correctInput()==1){
-      echo "<p class='funkcija'> Uneseni podaci moraju biti brojevi!</p>";
+    else if (inputEmpty()==1){
+      echo "<p class='funkcija'> Niste unjeli podatke!</p>";
     }
     else if(aboveZero()==1){
       echo "<p class='funkcija'> Podaci moraju biti veći od nula!</p>";
-
+    }
+    else if(correctInput()==1){
+      echo "<p class='funkcija'> Uneseni podaci moraju biti brojevi!</p>";
     }
     else {
       echo "<p class='funkcija'> Unesite nove podatke..</p>";
