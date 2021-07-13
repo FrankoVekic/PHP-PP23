@@ -1,2 +1,2 @@
 <hr />
-&copy; <?php echo $naslovAplikacije, ' ', date('Y'); ?>
+&copy; <?php echo $appName, ' ', date('Y'); ?>

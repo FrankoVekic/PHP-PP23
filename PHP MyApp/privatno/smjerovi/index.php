@@ -1,5 +1,5 @@
 <?php require_once '../../konfiguracija.php'; 
-sticenjeStranice($putanjaAplikacije);
+sticenjeStranice($appLink);
 ?>
 <!DOCTYPE html>
 <html lang="en">

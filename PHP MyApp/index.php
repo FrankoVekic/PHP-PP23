@@ -1,6 +1,6 @@
 <?php require_once 'konfiguracija.php'; 
 if(isset($_SESSION['autoriziran'])){
-    header('location:' . $putanjaAplikacije . 'privatno/nadzornaploca.php');
+    header('location:' . $appLink . 'privatno/nadzornaploca.php');
     exit;
 }
 ?>
@@ -13,7 +13,7 @@ if(isset($_SESSION['autoriziran'])){
     <div class="grid-container">
         <?php require_once 'predlozak/izbornik.php'; ?>
         <div class="callout pocetna">
-            <form action="<?php echo $putanjaAplikacije; ?>autorizacija.php" method="post">
+            <form action="<?php echo $appLink; ?>autorizacija.php" method="post">
                 <label for="email">Email</label>
                 <input type="text" name="email" id="email">
                 <label for="lozinka">Lozinka</label>

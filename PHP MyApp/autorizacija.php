@@ -36,7 +36,7 @@ if($postoji){
     $_SESSION['smjerovi']=$niz;
 
 
-    header('location:' . $putanjaAplikacije . 'privatno/nadzornaploca.php');
+    header('location:' . $appLink . 'privatno/nadzornaploca.php');
 }else{
-    header('location:' . $putanjaAplikacije . 'index.php');
+    header('location:' . $appLink . 'index.php');
 }

@@ -1,6 +1,6 @@
 <?php require_once '../konfiguracija.php'; 
 //štićenje
-sticenjeStranice($putanjaAplikacije);
+sticenjeStranice($appLink);
 ?>
 <!DOCTYPE html>
 <html lang="en">

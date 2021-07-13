@@ -1,5 +1,5 @@
 <?php require_once '../../konfiguracija.php'; 
-sticenjeStranice($putanjaAplikacije);
+sticenjeStranice($appLink);
 $smjer=null;
 for($i=0;$i<count($_SESSION['smjerovi']);$i++){
     $s = $_SESSION['smjerovi'][$i];

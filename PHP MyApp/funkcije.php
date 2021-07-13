@@ -11,10 +11,10 @@ function logiranje($varijabla)
     echo '<hr />';
 }
 
-function sticenjeStranice($putanjaAplikacije)
+function sticenjeStranice($appLink)
 {
     if(!isset($_SESSION['autoriziran'])){
-        header('location:' . $putanjaAplikacije . 'index.php');
+        header('location:' . $appLink . 'index.php');
         exit;
     }
 }
