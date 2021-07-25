@@ -3,12 +3,14 @@
 }
 body{
     background-image: url(includes/background.jpg);
-    background-size: cover;
+    background-size: 1900px;
     background-repeat: no-repeat;
 }
 
 .button {
     background-color: pink;
+    position: relative;
+    left: 100px;
 }
 
 h4{
@@ -23,8 +25,6 @@ color: white;
 margin-top: 35px;
 
 }
-
-
 .imena{
     font-size: 50px;
     color: white;
@@ -34,3 +34,53 @@ margin-top: 35px;
     letter-spacing:8px;
 }
 
+input {
+    background-image: linear-gradient(90deg,white,pink);
+}
+
+.heart{
+    position: relative;
+    left: 500px;
+    top: -500px;
+    font-size: 100px;
+    animation: heart 1.2s linear infinite;
+}
+
+@keyframes heart{
+    0%{
+        transform:  scale(1.09);
+    }
+    80%{
+        transform:  scale(1.0);
+    }
+    100%{
+        transform:  scale(0.8);
+    }
+}
+
+h3{
+    position: relative;
+    font-size: 40px;
+    top: -810px;
+    left: 500px;
+    text-align: center;
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: white;
+    animation: heart 1.2s linear infinite;
+}
+@keyframes h3{
+    0%{
+        transform:  scale(1.09);
+    }
+    80%{
+        transform:  scale(1.0);
+    }
+    100%{
+        transform:  scale(0.8);
+    }
+}
+
+.odabir{
+    font-size: 20px;
+    color: white;
+}

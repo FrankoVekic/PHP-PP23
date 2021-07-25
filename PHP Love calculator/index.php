@@ -14,10 +14,10 @@
   <body>
     <br>
     
-    <div class="large-3 large-centered columns">
-    <div class="login-box" style="margin-top: 100px; margin-left:-300px; margin-right:350px;">
-    <div class="row">
-    <div class="text1">
+<div class="large-3 large-centered columns">
+  <div class="login-box" style="margin-top: 100px; margin-left:-300px; margin-right:350px;">
+  <div class="row">
+     <div class="text1">
                <p>Napiši svoje ime i ime svoje simpatije.
                  Nakon toga ispod svakog slova napiši koliko se puta
                  ono ponavlja. Svaki prvi broj ispod svog imena i 
@@ -34,6 +34,7 @@
     <div class="large-12 columns">
         <h4 class="text-center"><p>Upišite željena imena</p></h4>
         <form action="" method="post">
+      <div class="inputs">
         <div class="row">
            <div class="large-12 columns">
                <input type="text" name="name1" placeholder="Prvo ime" />
@@ -44,20 +45,23 @@
                <input type="text" name="name2" placeholder="Drugo ime" />
            </div>
          </div>
-
 </div>
     </div>
+  <div class="tipka">
         <div class="row">
           <div class="large-12 large-centered columns">
             <input type="submit" name="submit" class="button expand" value="Izračunaj postotak ljubavi."/>
           </div>
+        </div>
+    </div>
+</div>
+</div>
+      <div class="output">
+          <div class="heart">
+                <img src="includes/heart.png">
           </div>
-         </div>
-            <div class="output">
             <?php
-
               include 'lovecalc.php';
-
               ?>
               </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -67,4 +71,3 @@
     </script>
   </body>
 </html>
-
